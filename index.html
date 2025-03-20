@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i love you</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .letter {
+            width: 50%;
+            padding: 20px;
+            border: 2px solid #ff6b6b;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .letter h1 {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .letter:hover{background-color: rgb(236, 163, 151);
+        transition:background-color 0.6s ease;
+        }
+
+        .spline-viewer-container {
+            width: 45%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        spline-viewer {
+            width: 100%;
+            height: 100%;
+        }
+
+        .heart-link {
+            text-decoration: none;
+            color: #ff6b6b;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .heart-link::after {
+            content: '❤️';
+            position: absolute;
+            opacity: 0;
+            top: -10px;
+            right: -15px;
+            font-size: 20px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .heart-link:hover {
+            color: #ff3b3b;
+        }
+
+        .heart-link:hover::after {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
+        .arrow-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .arrow-container svg {
+            width: 50px;
+            height: 50px;
+            fill: #000000;
+        }
+
+        .arrow-container div {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+      <!-- if you, somehow, managed to see this comment, i want you to know that i love you so much a maryam -->
+    <div class="letter">
+        <h1>Dear Maryam, <br><br>
+
+            Every day, I’m reminded of how grateful I am to have you in my life. You bring a light that makes everything brighter, and your presence feels like a safe haven in a world that can sometimes feel overwhelming. I admire you more than I can say—your intelligence, your kindness, and the way you face challenges with such grace and determination.<br><br>
+
+I want you to know how much I believe in you. Whether it’s your studies, your dreams, or the little things that weigh on your mind, I have no doubt that you’ll conquer them all. You’re capable of so much more than you realize, and I’ll always be here to remind you of that when you need it.<br><br>
+
+Take care of yourself, my love. I’m always here for you, cheering you on and holding you close in my thoughts. Until we meet again, know that you’re missed and adored every single day.<br><br>
+            
+            <a href="#" class="heart-link">With all my love and a heart full of gratitude,</a><br>
+            BADR</h1>
+    </div>
+
+    <div class="spline-viewer-container">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/gL2FxBeXjtV7yAQ7/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div class="arrow-container">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+        <div>our home</div>
+    </div>
+</body>
+</html>
